@@ -18,7 +18,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let keychain = Keychain(service: "serviceNameA", accessGroup: "38T4C62JZM.com.marmaladesoul.KeychainOne").synchronizable(true)
 
-        keychain["testItem"] = "abc123"
+        keychain["testItem"] = "password-one"
+
+        // With PR from https://github.com/kishikawakatsumi/KeychainAccess/pull/363
+        let sshKeychain = Keychain(server: "ssh://server.com", protocolType: .ssh, accessGroup: "38T4C62JZM.com.marmaladesoul.KeychainOne").synchronizable(true)
+
+        sshKeychain["testItem"] = "password-two"
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
