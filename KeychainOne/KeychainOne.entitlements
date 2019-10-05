@@ -5,7 +5,6 @@
 	<key>keychain-access-groups</key>
 	<array>
 		<string>$(AppIdentifierPrefix)com.marmaladesoul.KeychainOne</string>
-		<string>$(AppIdentifierPrefix)com.marmaladesoul.testGroup</string>
 	</array>
 </dict>
 </plist>

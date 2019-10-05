@@ -4,8 +4,7 @@
 <dict>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.marmaladesoul.KeychainTwo</string>
-		<string>$(AppIdentifierPrefix)com.marmaladesoul.testGroup</string>
+		<string>$(AppIdentifierPrefix)com.marmaladesoul.KeychainOne</string>
 	</array>
 </dict>
 </plist>
