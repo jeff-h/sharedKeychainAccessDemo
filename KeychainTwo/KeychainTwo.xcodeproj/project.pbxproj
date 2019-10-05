@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F55EC9623484D7F00DAA329 /* CommandLineTool in Copy Command Line Tool */ = {isa = PBXBuildFile; fileRef = 6F55EC9523484D6400DAA329 /* CommandLineTool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6F71732520A03D9F00104FFA /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F71732420A03D9F00104FFA /* Keychain.swift */; };
 		6F8CB3D020A0344A0008C687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB3CF20A0344A0008C687 /* AppDelegate.swift */; };
 		6F8CB3D220A0344A0008C687 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CB3D120A0344A0008C687 /* ViewController.swift */; };
@@ -14,7 +15,32 @@
 		6F8CB3D720A0344B0008C687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F8CB3D520A0344B0008C687 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6F55EC9423484D6400DAA329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F55EC9023484D6300DAA329 /* CommandLineTool.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6F55EC7D2348302100DAA329;
+			remoteInfo = CommandLineTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F55EC8F23484CF900DAA329 /* Copy Command Line Tool */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				6F55EC9623484D7F00DAA329 /* CommandLineTool in Copy Command Line Tool */,
+			);
+			name = "Copy Command Line Tool";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6F55EC9023484D6300DAA329 /* CommandLineTool.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommandLineTool.xcodeproj; path = ../CommandLineTool/CommandLineTool.xcodeproj; sourceTree = "<group>"; };
 		6F71732420A03D9F00104FFA /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = ../../KeychainOne/Keychain.swift; sourceTree = "<group>"; };
 		6F8CB3CC20A0344A0008C687 /* KeychainTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8CB3CF20A0344A0008C687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,10 +62,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F55EC9123484D6300DAA329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F55EC9523484D6400DAA329 /* CommandLineTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6F8CB3C320A0344A0008C687 = {
 			isa = PBXGroup;
 			children = (
 				6F8CB3CE20A0344A0008C687 /* KeychainTwo */,
+				6F55EC9023484D6300DAA329 /* CommandLineTool.xcodeproj */,
 				6F8CB3CD20A0344A0008C687 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +111,7 @@
 				6F8CB3C820A0344A0008C687 /* Sources */,
 				6F8CB3C920A0344A0008C687 /* Frameworks */,
 				6F8CB3CA20A0344A0008C687 /* Resources */,
+				6F55EC8F23484CF900DAA329 /* Copy Command Line Tool */,
 			);
 			buildRules = (
 			);
@@ -120,12 +156,28 @@
 			mainGroup = 6F8CB3C320A0344A0008C687;
 			productRefGroup = 6F8CB3CD20A0344A0008C687 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6F55EC9123484D6300DAA329 /* Products */;
+					ProjectRef = 6F55EC9023484D6300DAA329 /* CommandLineTool.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6F8CB3CB20A0344A0008C687 /* KeychainTwo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6F55EC9523484D6400DAA329 /* CommandLineTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = CommandLineTool;
+			remoteRef = 6F55EC9423484D6400DAA329 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6F8CB3CA20A0344A0008C687 /* Resources */ = {
